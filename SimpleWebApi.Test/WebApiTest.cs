@@ -27,6 +27,7 @@ public class WebApiTest : IClassFixture<WebApplicationFactory<Program>>
             string errorContent = await response.Content.ReadAsStringAsync();
             Console.WriteLine($"API Error Code: {(int)response.StatusCode}");
             Console.WriteLine($"Error Details: {errorContent}");
+            throw new InvalidOperationException($"Error Details: {errorContent}");
         }
 
         // Assert
