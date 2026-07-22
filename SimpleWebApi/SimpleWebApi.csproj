@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" />
     <InternalsVisibleTo Include="SimpleWebApi.Test" />
   </ItemGroup>
 
