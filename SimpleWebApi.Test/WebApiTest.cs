@@ -21,8 +21,17 @@ public class WebApiTest : IClassFixture<WebApplicationFactory<Program>>
         // Act
         var response = await client.GetAsync("/weatherforecast");
 
+        
+        if (!response.IsSuccessStatusCode)
+        {
+            string errorContent = await response.Content.ReadAsStringAsync();
+            Console.WriteLine($"API Error Code: {(int)response.StatusCode}");
+            Console.WriteLine($"Error Details: {errorContent}");
+        }
+
         // Assert
         response.EnsureSuccessStatusCode(); // Status Code 200-299
+        
         Assert.Equal("application/json; charset=utf-8",
             response.Content.Headers.ContentType?.ToString());
     }
