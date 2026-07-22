@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
-    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.*" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.*" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Text.Json" />
-     <InternalsVisibleTo Include="SimpleWebApi.Test" />
+    <InternalsVisibleTo Include="SimpleWebApi.Test" />
   </ItemGroup>
 
 </Project>
