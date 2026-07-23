@@ -1,0 +1,8 @@
+{
+  "files": [
+    {
+      "pattern": "out/**",
+      "target": "generic-local/simple-dotnet-web-app/"
+    }
+  ]
+}
