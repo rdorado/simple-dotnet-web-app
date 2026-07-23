@@ -2,7 +2,7 @@
   "files": [
     {
       "pattern": "out/**/*",
-      "target": "example-local-repo/simple-dotnet-web-app/"
+      "target": "generic-local/simple-dotnet-web-app/"
     }
   ]
 }
