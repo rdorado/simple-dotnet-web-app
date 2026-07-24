@@ -1,6 +1,6 @@
 {
   "files": [
-    
+    {
       "pattern": "./*.dll",
       "target": "generic-local/simple-dotnet-web-app/${BUILD_NUMBER}/"
     }
