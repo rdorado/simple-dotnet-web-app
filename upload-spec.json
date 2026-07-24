@@ -1,7 +1,7 @@
 {
   "files": [
-    {
-      "pattern": "./**/*",
+    
+      "pattern": "./*.*",
       "target": "generic-local/simple-dotnet-web-app/${BUILD_NUMBER}/"
     }
   ]
